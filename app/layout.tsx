@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: { default: 'El Charro Funk · Ecosistema creativo', template: '%s · El Charro Funk' },
-  description: 'Demo del ecosistema de música, gastronomía y experiencias de El Charro Funk en Guadalajara.',
+  title: { default: 'Charrofunka Company · Ecosistema creativo', template: '%s · Charrofunka Company' },
+  description: 'Música, gastronomía y experiencias de Charrofunka Company en Guadalajara.',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

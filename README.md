@@ -8,7 +8,7 @@ Los textos, menús, eventos, enlaces y teléfono provisional están centralizado
 
 La demo no incluye autenticación, cuentas, panel de usuario ni almacenamiento de datos personales. El pre-registro de OEE funciona en modo demostración y no guarda información hasta que se conecte un canal oficial y se apruebe el aviso de privacidad. La arquitectura futura está descrita en `docs/ARQUITECTURA_FUTURA.md`.
 
-Los cuatro artes recientes de Funky Burgers, Pachakana y OEE fueron proporcionados para esta demo. Las demás fotografías editoriales siguen siendo recursos conceptuales y deben reemplazarse por material aprobado antes de publicar.
+Los artes recientes de Funky Burgers, Pachakana y OEE, junto con las fotografías del archivo de competencias, fueron proporcionados para esta demo. Las demás fotografías editoriales siguen siendo recursos conceptuales y deben reemplazarse por material aprobado antes de publicar.
 
 ## Uso local
 

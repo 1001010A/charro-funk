@@ -10,6 +10,7 @@ export const siteData = {
   whatsapp: '5210000000000',
   notice: 'En construcción · Fechas y convocatoria por confirmar',
   brands: [
+    { name: 'El Charro Funk', eyebrow: 'Proyecto musical · Sello creativo', href: '/el-charro-funk', description: 'Proyecto musical y sello creativo que conecta identidad mexicana, ritmo y una visión contemporánea.', color: '#e4a72d', image: '/charro-hero.png' },
     { name: 'Funky Burgers', eyebrow: 'Barrio · Sabor · Ritmo', href: '/funky-burgers', description: 'Hamburguesas con identidad, pan de masa madre y una vibra hecha para compartir.', color: '#ef5b2a', image: '/funky-pachakana-collab.png' },
     { name: 'Pachakana', eyebrow: 'Pizza · Wings · Encuentro', href: '/pachakana', description: 'Fuego, masa y comunidad con una mirada contemporánea y raíz mexicana.', color: '#d89b2b', image: '/funky-pachakana-collab.png' },
     { name: 'Originality, Style and Essence', eyebrow: 'Batallas · Danza · Comunidad', href: '/originalidad-estilo-esencia', description: 'Una plataforma para la escena, la competencia y la memoria del movimiento.', color: '#c98a2c', image: '/oee-third-edition.png' },
@@ -48,5 +49,10 @@ export const siteData = {
     status: 'Coming soon · 2027',
     eventName: 'Batallas Neoprimitivas',
     registrationOpen: false,
+    packages: [
+      { name: 'Copper', price: '$1,200', featured: false, includes: ['1 categoría de batalla', '2 workshops', '1 conversatorio', 'Acceso al evento'] },
+      { name: 'Silver', price: '$1,800', featured: false, includes: ['1 categoría de batalla', '4 workshops', 'Conversatorios', 'Acceso al evento'] },
+      { name: 'Golden', price: '$5,500', featured: true, includes: ['2 categorías de batalla', 'Todos los workshops', 'Conversatorio', 'Hospedaje de 2 noches', 'Comidas durante 2 días', 'Bebidas', 'After party'] },
+    ],
   },
 };

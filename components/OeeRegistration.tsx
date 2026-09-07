@@ -26,6 +26,7 @@ export function OeeRegistration({ phone, registrationOpen }: { phone: string; re
       `Alias: ${value('alias')}`,
       `Ciudad: ${value('city')}`,
       `Categoría: ${value('category')}`,
+      `Plan: ${value('plan')}`,
       `Contacto: ${value('contact')}`,
     ].join('\n');
 
@@ -38,7 +39,8 @@ export function OeeRegistration({ phone, registrationOpen }: { phone: string; re
         <label>Nombre completo<input name="name" autoComplete="name" required /></label>
         <label>Nombre artístico / alias<input name="alias" required /></label>
         <label>Ciudad<input name="city" autoComplete="address-level2" required /></label>
-        <label>Categoría<select name="category" defaultValue="" required><option value="" disabled>Selecciona una opción</option><option>Open styles</option><option>Freestyle</option><option>Quiero recibir orientación</option></select></label>
+        <label>Categoría<select name="category" defaultValue="" required><option value="" disabled>Selecciona una opción</option><option>Breaking</option><option>Popping</option><option>Electro</option><option>Hip-Hop</option><option>Quiero recibir orientación</option></select></label>
+        <label>Plan<select name="plan" defaultValue="" required><option value="" disabled>Selecciona una opción</option><option>Copper · $1,200</option><option>Silver · $1,800</option><option>Golden · $5,500</option></select></label>
         <label className="registration-form__wide">Instagram o WhatsApp<input name="contact" required placeholder="Tu contacto" /></label>
       </div>
       <label className="registration-consent"><input type="checkbox" required /> Confirmo que mis datos sólo se usarán para dar seguimiento a este evento.</label>

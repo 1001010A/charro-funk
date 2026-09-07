@@ -5,9 +5,9 @@ import { siteData } from '@/app/data';
 export function SiteHeader({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
   return (
     <header className={`site-header ${theme === 'light' ? 'site-header--light' : ''}`}>
-      <Link className="brand-lockup" href="/" aria-label="El Charro Funk, inicio">
+      <Link className="brand-lockup" href="/" aria-label="Charrofunka Company, inicio">
         <span className="brand-mark">CF</span>
-        <span><strong>El Charro Funk</strong><small>Ecosistema creativo</small></span>
+        <span><strong>Charrofunka Company</strong><small>Ecosistema creativo</small></span>
       </Link>
       <nav aria-label="Navegación principal">
         <Link href="/el-charro-funk">Música</Link>

@@ -4,7 +4,7 @@ import { ArrowDown, ArrowUpRight, Disc3, UtensilsCrossed, WandSparkles } from 'l
 import { siteData } from './data';
 import { DemoNotice, SiteFooter, SiteHeader } from '@/components/SiteChrome';
 
-const icons = [UtensilsCrossed, UtensilsCrossed, WandSparkles];
+const icons = [Disc3, UtensilsCrossed, UtensilsCrossed, WandSparkles];
 
 export default function Home() {
   return (
@@ -15,9 +15,9 @@ export default function Home() {
         <Image src="/charro-hero.png" alt="Escena conceptual de tornamesa y micrófono" fill priority sizes="100vw" />
         <div className="home-hero__shade" />
         <div className="home-hero__content">
-          <p className="eyebrow">Guadalajara · Ritmo · Sazón · Barrio</p>
+          <p className="eyebrow">Charrofunka Company · Guadalajara</p>
           <h1>Una misma raíz.<br /><em>Cuatro formas de vivirla.</em></h1>
-          <p>Acá la música se sirve fuerte, la comida reúne a la banda y cada encuentro nace con sello propio.</p>
+          <p>Cuatro caminos de una misma compañía creativa: música, cocina, comunidad y experiencias nacidas en México.</p>
           <div className="hero-actions">
             <a className="primary-button" href="#ecosistema">Conocer las marcas <ArrowDown size={18} /></a>
             <Link className="text-button" href="/el-charro-funk"><Disc3 size={19} /> Escuchar el proyecto</Link>
