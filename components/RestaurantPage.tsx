@@ -15,10 +15,11 @@ type RestaurantProps = {
   headline: string;
   description: string;
   image: string;
+  imageAlt: string;
   gallery?: { src: string; alt: string }[];
 };
 
-export function RestaurantPage({ brand, name, kicker, headline, description, image, gallery = [] }: RestaurantProps) {
+export function RestaurantPage({ brand, name, kicker, headline, description, image, imageAlt, gallery = [] }: RestaurantProps) {
   const [language, setLanguage] = useState<'es' | 'en'>('es');
   const menu = siteData.menus[brand];
   const orderText = encodeURIComponent(`Hola, quiero hacer un pedido en ${name}. [Mensaje demostrativo]`);
@@ -28,7 +29,7 @@ export function RestaurantPage({ brand, name, kicker, headline, description, ima
     <main className={`restaurant-page restaurant-page--${brand}`}>
       <SiteHeader />
       <section className="restaurant-hero">
-        <Image src={image} alt="Fotografía conceptual para reemplazar por material oficial" fill priority sizes="100vw" />
+        <Image src={image} alt={imageAlt} fill priority sizes="100vw" />
         <div className="restaurant-shade" />
         <div className="restaurant-hero__content">
           <Link className="back-link" href="/"><ArrowLeft size={17} /> Ecosistema</Link>
@@ -56,7 +57,7 @@ export function RestaurantPage({ brand, name, kicker, headline, description, ima
         </section>
       )}
       <EventStrip />
-      <section className="cross-cta"><p className="eyebrow">Parte de El Charro Funk</p><h2>Cáele al ecosistema completo.</h2><Link href="/">Explorar las marcas <ArrowUpRight size={19} /></Link></section>
+      <section className="cross-cta"><p className="eyebrow">Funky Burgers × Pachakana</p><h2>{brand === 'funky' ? 'También hay fuego y pizza.' : 'También hay burgers con ritmo.'}</h2><Link href={brand === 'funky' ? '/pachakana' : '/funky-burgers'}>{brand === 'funky' ? 'Conocer Pachakana' : 'Conocer Funky Burgers'} <ArrowUpRight size={19} /></Link><Link href="/">Ver todas las marcas <ArrowUpRight size={19} /></Link></section>
       <SiteFooter />
     </main>
   );

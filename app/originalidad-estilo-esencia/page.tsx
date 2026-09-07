@@ -11,6 +11,7 @@ const transformations = [
 ];
 
 const archivePhotos = [
+  { src: '/oee-embrace.png', alt: 'Abrazo entre participantes con el sello Originality, Style and Essence' },
   { src: '/oee-archive-move-center.png', alt: 'Comunidad de bailarines en The Move Center' },
   { src: '/oee-archive-crew-mirror.png', alt: 'Participantes frente al espejo en The Move Center' },
   { src: '/oee-archive-jury.png', alt: 'Panel de jurado durante una edición anterior' },
