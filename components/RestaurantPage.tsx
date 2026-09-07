@@ -8,9 +8,17 @@ import type { MenuItem } from '@/app/data';
 import { siteData } from '@/app/data';
 import { EventStrip, SiteFooter, SiteHeader } from './SiteChrome';
 
-type RestaurantProps = { brand: 'funky' | 'pachakama'; name: string; kicker: string; headline: string; description: string; image: string };
+type RestaurantProps = {
+  brand: 'funky' | 'pachakana';
+  name: string;
+  kicker: string;
+  headline: string;
+  description: string;
+  image: string;
+  gallery?: { src: string; alt: string }[];
+};
 
-export function RestaurantPage({ brand, name, kicker, headline, description, image }: RestaurantProps) {
+export function RestaurantPage({ brand, name, kicker, headline, description, image, gallery = [] }: RestaurantProps) {
   const [language, setLanguage] = useState<'es' | 'en'>('es');
   const menu = siteData.menus[brand];
   const orderText = encodeURIComponent(`Hola, quiero hacer un pedido en ${name}. [Mensaje demostrativo]`);
@@ -39,8 +47,16 @@ export function RestaurantPage({ brand, name, kicker, headline, description, ima
         </div>
         <p className="menu-note">Menú y precios de muestra. Recetas, alérgenos, disponibilidad y montos están pendientes de validación.</p>
       </section>
+      {gallery.length > 0 && (
+        <section className="brand-proof" aria-labelledby={`${brand}-archivo`}>
+          <div className="section-heading"><p className="eyebrow">Hecho acá · Con identidad</p><h2 id={`${brand}-archivo`}>Sabor que sí tiene barrio.</h2><p>Material compartido por la marca. La dirección visual mezcla energía contemporánea, color popular y raíz mexicana.</p></div>
+          <div className="brand-proof__grid">
+            {gallery.map((item) => <figure key={item.src}><Image src={item.src} alt={item.alt} fill sizes="(max-width: 700px) 100vw, 50vw" /></figure>)}
+          </div>
+        </section>
+      )}
       <EventStrip />
-      <section className="cross-cta"><p className="eyebrow">Parte de El Charro Funk</p><h2>Descubre el ecosistema completo.</h2><Link href="/">Explorar las marcas <ArrowUpRight size={19} /></Link></section>
+      <section className="cross-cta"><p className="eyebrow">Parte de El Charro Funk</p><h2>Cáele al ecosistema completo.</h2><Link href="/">Explorar las marcas <ArrowUpRight size={19} /></Link></section>
       <SiteFooter />
     </main>
   );

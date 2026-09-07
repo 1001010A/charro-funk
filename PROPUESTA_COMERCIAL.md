@@ -9,7 +9,7 @@
 
 ## Objetivo
 
-Crear un ecosistema digital coherente para El Charro Funk, Funky Burgers, Pachakama y Originalidad, Estilo y Esencia, con identidades diferenciadas, navegación clara y una base técnica que permita agregar contenido definitivo y nuevas funciones sin rehacer el proyecto. La presentación inicial se concentra en presencia de marca, menús bilingües y contacto directo por WhatsApp.
+Crear un ecosistema digital coherente para El Charro Funk, Funky Burgers, Pachakana y Originality, Style and Essence, con identidades diferenciadas, navegación clara y una base técnica que permita agregar contenido definitivo y nuevas funciones sin rehacer el proyecto. La presentación inicial se concentra en presencia de marca, menús bilingües, contacto directo por WhatsApp y la convocatoria de Batallas Neoprimitivas.
 
 ## Fase 1 — MVP presentable
 
@@ -18,8 +18,8 @@ Crear un ecosistema digital coherente para El Charro Funk, Funky Burgers, Pachak
 - Portada principal de El Charro Funk con acceso visible a las tres marcas relacionadas.
 - Sitio de El Charro Funk con historia, identidad, galería y discografía visual.
 - Sitio de Funky Burgers con menú bilingüe, acceso a WhatsApp y eventos de OEE.
-- Sitio de Pachakama con menú bilingüe, acceso a WhatsApp y eventos de OEE.
-- Landing de OEE con historia provisional, propuesta de identidad, galería, cartel destacado y contacto por WhatsApp.
+- Sitio de Pachakana con menú bilingüe, acceso a WhatsApp y colaboración con Funky Burgers.
+- Landing de OEE con identidad neoprimitiva, tercera edición de Batallas Neoprimitivas, archivo histórico preparado, pre-registro demostrativo y contacto por WhatsApp.
 - Diseño responsivo para teléfono, tableta y escritorio.
 - Accesibilidad base: jerarquía semántica, navegación por teclado, etiquetas de formulario y contraste.
 - Contenido editable desde un archivo centralizado.
@@ -34,8 +34,9 @@ Crear un ecosistema digital coherente para El Charro Funk, Funky Burgers, Pachak
 3. Menús bilingües y llamadas a pedido por WhatsApp.
 4. Discografía enlazada a Apple Music y YouTube.
 5. Llamadas directas a WhatsApp para pedidos e información de eventos.
-6. Código fuente y guía breve para actualización de contenido.
-7. Una ronda de ajustes sobre contenido y detalle visual después de recibir materiales finales.
+6. Vista de pre-registro para OEE, pendiente de conexión al canal oficial y aviso de privacidad.
+7. Código fuente y guía breve para actualización de contenido.
+8. Una ronda de ajustes sobre contenido y detalle visual después de recibir materiales finales.
 
 ### Cronograma estimado
 
@@ -63,7 +64,7 @@ El calendario comienza cuando se cuenta con anticipo, responsables de aprobació
 
 ## Fase 2 — Operación y crecimiento opcional
 
-Las siguientes mejoras se cotizan después de validar el MVP y priorizar el flujo de negocio. No se implementan ni se muestran en la demo actual.
+Las siguientes mejoras operativas se cotizan después de validar el MVP y priorizar el flujo de negocio. No están activas en la demo actual.
 
 | Mejora futura | Rango sugerido (MXN) |
 |---|---:|
@@ -96,7 +97,7 @@ Las siguientes mejoras se cotizan después de validar el MVP y priorizar el fluj
 - Comercio electrónico, pago en línea, facturación o integración con punto de venta.
 - Reservaciones, boletaje, códigos QR de acceso o control de aforo.
 - Inicio de sesión, perfiles de usuario o panel administrativo.
-- Formularios de registro, listas de asistentes o almacenamiento de datos personales.
+- Registro conectado, listas de asistentes, confirmaciones o almacenamiento de datos personales. La demo sólo presenta la interfaz sin guardar información.
 - Automatizaciones de correo, SMS o WhatsApp Business API.
 - Producción fotográfica, video, audio, redacción legal o registro de marcas.
 - Compra de dominio, hosting, cuentas, licencias o comisiones de terceros.

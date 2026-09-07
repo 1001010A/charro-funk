@@ -15,9 +15,9 @@ export default function Home() {
         <Image src="/charro-hero.png" alt="Escena conceptual de tornamesa y micrófono" fill priority sizes="100vw" />
         <div className="home-hero__shade" />
         <div className="home-hero__content">
-          <p className="eyebrow">Guadalajara · Música · Cocina · Experiencias</p>
+          <p className="eyebrow">Guadalajara · Ritmo · Sazón · Barrio</p>
           <h1>Una misma raíz.<br /><em>Cuatro formas de vivirla.</em></h1>
-          <p>El Charro Funk reúne música, hospitalidad y producción creativa en un ecosistema hecho para encontrarnos.</p>
+          <p>Acá la música se sirve fuerte, la comida reúne a la banda y cada encuentro nace con sello propio.</p>
           <div className="hero-actions">
             <a className="primary-button" href="#ecosistema">Conocer las marcas <ArrowDown size={18} /></a>
             <Link className="text-button" href="/el-charro-funk"><Disc3 size={19} /> Escuchar el proyecto</Link>
@@ -27,8 +27,8 @@ export default function Home() {
       </section>
       <section className="ecosystem" id="ecosistema" aria-labelledby="ecosistema-title">
         <div className="section-heading">
-          <p className="eyebrow">El ecosistema</p><h2 id="ecosistema-title">Elige por dónde entrar.</h2>
-          <p>Cada marca tiene su propia voz. Juntas comparten escenario, comunidad y una visión creativa.</p>
+          <p className="eyebrow">El ecosistema</p><h2 id="ecosistema-title">Cáele por donde quieras.</h2>
+          <p>Cada marca trae su propio sazón. Juntas comparten raíz, escenario y una comunidad que no se queda quieta.</p>
         </div>
         <div className="brand-grid">
           {siteData.brands.map((brand, index) => {
@@ -45,8 +45,8 @@ export default function Home() {
         </div>
       </section>
       <section className="manifesto">
-        <span className="manifesto-kicker">Música que alimenta.<br />Comida que reúne.<br />Eventos que permanecen.</span>
-        <blockquote>“No somos cuatro proyectos separados. Somos una conversación entre ritmo, mesa y escenario.”</blockquote>
+        <span className="manifesto-kicker">Ritmo que alimenta.<br />Sazón que reúne.<br />Barrio que permanece.</span>
+        <blockquote>“De este lado, la raíz no es museo: se mueve, se mezcla y arma comunidad.”</blockquote>
         <small>Manifiesto provisional de marca</small>
       </section>
       <SiteFooter />

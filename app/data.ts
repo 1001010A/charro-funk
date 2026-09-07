@@ -8,15 +8,15 @@ export type MenuItem = {
 
 export const siteData = {
   whatsapp: '5210000000000',
-  notice: 'Contenido demostrativo · Datos finales pendientes',
+  notice: 'En construcción · Fechas y convocatoria por confirmar',
   brands: [
-    { name: 'Funky Burgers', eyebrow: 'Smash · Sabor · Ritmo', href: '/funky-burgers', description: 'Hamburguesas con actitud, una cocina directa y noches que suben el volumen.', color: '#ff3db8', image: '/funky-burgers.png' },
-    { name: 'Pachakama', eyebrow: 'Cocina · Raíz · Encuentro', href: '/pachakama', description: 'Una mesa contemporánea inspirada en ingredientes, fuego y comunidad.', color: '#e6672e', image: '/oee-stage.png' },
-    { name: 'Originalidad, Estilo y Esencia', eyebrow: 'Producción · Dirección · Experiencias', href: '/originalidad-estilo-esencia', description: 'La firma que convierte ideas en encuentros memorables.', color: '#e9a84a', image: '/oee-stage.png' },
+    { name: 'Funky Burgers', eyebrow: 'Barrio · Sabor · Ritmo', href: '/funky-burgers', description: 'Hamburguesas con identidad, pan de masa madre y una vibra hecha para compartir.', color: '#ef5b2a', image: '/funky-pachakana-collab.png' },
+    { name: 'Pachakana', eyebrow: 'Pizza · Wings · Encuentro', href: '/pachakana', description: 'Fuego, masa y comunidad con una mirada contemporánea y raíz mexicana.', color: '#d89b2b', image: '/funky-pachakana-collab.png' },
+    { name: 'Originality, Style and Essence', eyebrow: 'Batallas · Danza · Comunidad', href: '/originalidad-estilo-esencia', description: 'Una plataforma para la escena, la competencia y la memoria del movimiento.', color: '#c98a2c', image: '/oee-third-edition.png' },
   ],
   events: [
-    { date: '18 OCT', title: 'Sesión Nocturna 01', place: 'Sede por anunciar · Guadalajara', note: 'Evento demostrativo' },
-    { date: '09 NOV', title: 'Mesa, Música & Fuego', place: 'Sede por anunciar · Guadalajara', note: 'Evento demostrativo' },
+    { date: '2027', title: 'Batallas Neoprimitivas · 3ra edición', place: 'Guadalajara · Sede por anunciar', note: 'Coming soon' },
+    { date: 'PRONTO', title: 'Talleres & talento invitado', place: 'Horarios y participantes por anunciar', note: 'En preparación' },
   ],
   menus: {
     funky: [
@@ -25,7 +25,7 @@ export const siteData = {
       { name: 'Verde Funk', nameEn: 'Green Funk', description: 'Opción vegetal, hojas frescas, pepinillos y salsa especiada.', descriptionEn: 'Plant-based option, fresh greens, pickles and spiced sauce.', price: '$—' },
       { name: 'Papas Backstage', nameEn: 'Backstage Fries', description: 'Papas crujientes con mezcla de especias de la casa.', descriptionEn: 'Crispy fries with our house spice blend.', price: '$—' },
     ] satisfies MenuItem[],
-    pachakama: [
+    pachakana: [
       { name: 'Taco de Brasa', nameEn: 'Ember Taco', description: 'Proteína del día, vegetales tatemados y salsa de temporada.', descriptionEn: 'Daily protein, fire-roasted vegetables and seasonal salsa.', price: '$—' },
       { name: 'Bowl de la Milpa', nameEn: 'Milpa Bowl', description: 'Granos, hojas, maíz y aderezo cítrico.', descriptionEn: 'Grains, greens, corn and citrus dressing.', price: '$—' },
       { name: 'Tostada del Pacífico', nameEn: 'Pacific Tostada', description: 'Preparación fresca del día, cítricos y chile suave.', descriptionEn: 'Fresh daily preparation, citrus and mild chile.', price: '$—' },
@@ -42,4 +42,11 @@ export const siteData = {
     { title: 'El Santo Charro', type: 'Título visible en Apple Music', palette: 'album-three' },
   ],
   catalogTitles: ['Humilde', 'Braxhilican', 'Mis Experiencias', 'Una Nueva Canción', 'Universo Creado Para Ti', 'Funk Moderno', 'Trap Meixhica'],
+  oee: {
+    presentedBy: 'Funkyburgs & Pachakana presenta',
+    edition: '3ra edición',
+    status: 'Coming soon · 2027',
+    eventName: 'Batallas Neoprimitivas',
+    registrationOpen: false,
+  },
 };

@@ -1,6 +1,6 @@
 # Arquitectura futura — funciones no incluidas en la demo
 
-Este documento registra puntos de extensión para una fase posterior. No existe autenticación, registro de usuarios, formulario de asistentes, base de datos ni panel administrativo activo en la demo actual.
+Este documento registra puntos de extensión para una fase posterior. La demo ya muestra una interfaz de pre-registro para OEE, pero no guarda ni transmite datos mientras el canal oficial y el aviso de privacidad estén pendientes. No existe autenticación, base de datos ni panel administrativo activo.
 
 ## Principios para la siguiente fase
 
@@ -13,7 +13,7 @@ Este documento registra puntos de extensión para una fase posterior. No existe 
 ## Puntos de extensión previstos
 
 1. **Contenido administrable:** sustituir progresivamente `app/data.ts` por un repositorio de contenido con la misma estructura pública.
-2. **Registro de eventos:** insertar un módulo independiente en la landing de OEE y conectarlo a un endpoint dedicado cuando el flujo, campos y avisos legales estén aprobados.
+2. **Registro de eventos:** conectar el módulo independiente de OEE a un endpoint dedicado cuando el flujo, campos, responsables y avisos legales estén aprobados.
 3. **Cuentas y permisos:** crear rutas protegidas separadas de las landings públicas; no mezclar autenticación con la navegación de la demo.
 4. **Panel administrativo:** consumir los mismos servicios de contenido y eventos mediante permisos por rol.
 5. **Persistencia:** elegir y documentar la base de datos sólo después de definir volumen, responsables, exportaciones y periodos de conservación.

@@ -1,14 +1,14 @@
 # El Charro Funk — base del ecosistema web
 
-Demo local con cinco rutas: portada, El Charro Funk, Funky Burgers, Pachakama y Originalidad, Estilo y Esencia.
+Demo local con cinco rutas: portada, El Charro Funk, Funky Burgers, Pachakana y Originality, Style and Essence.
 
 ## Edición rápida
 
 Los textos, menús, eventos, enlaces y teléfono provisional están centralizados en `app/data.ts`. Las imágenes están en `public/` y pueden reemplazarse conservando el nombre del archivo o actualizando la referencia correspondiente.
 
-La demo no incluye autenticación, cuentas, panel de usuario, registro de asistentes ni almacenamiento de datos personales. Esas capacidades están contempladas como una fase futura opcional en `docs/ARQUITECTURA_FUTURA.md`, sin integraciones activas en la presentación actual.
+La demo no incluye autenticación, cuentas, panel de usuario ni almacenamiento de datos personales. El pre-registro de OEE funciona en modo demostración y no guarda información hasta que se conecte un canal oficial y se apruebe el aviso de privacidad. La arquitectura futura está descrita en `docs/ARQUITECTURA_FUTURA.md`.
 
-Las fotografías editoriales incluidas son recursos conceptuales generados para esta demo. Deben reemplazarse por material aprobado y proporcionado por el cliente antes de publicar.
+Los cuatro artes recientes de Funky Burgers, Pachakana y OEE fueron proporcionados para esta demo. Las demás fotografías editoriales siguen siendo recursos conceptuales y deben reemplazarse por material aprobado antes de publicar.
 
 ## Uso local
 
