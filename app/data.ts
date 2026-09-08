@@ -11,10 +11,34 @@ export const siteData = {
   notice: 'En construcción · Fechas y convocatoria por confirmar',
   brands: [
     { name: 'El Charro Funk', eyebrow: 'Proyecto musical · Sello creativo', href: '/el-charro-funk', description: 'Proyecto musical y sello creativo que conecta identidad mexicana, ritmo y una visión contemporánea.', color: '#e4a72d', image: '/charro-hero.png' },
-    { name: 'Funky Burgers', eyebrow: 'Barrio · Sabor · Ritmo', href: '/funky-burgers', description: 'Hamburguesas con identidad, pan de masa madre y una vibra hecha para compartir.', color: '#ef5b2a', image: '/funky-pachakana-collab.png' },
-    { name: 'Pachakana', eyebrow: 'Pizza · Wings · Encuentro', href: '/pachakana', description: 'Fuego, masa y comunidad con una mirada contemporánea y raíz mexicana.', color: '#d89b2b', image: '/funky-pachakana-collab.png' },
-    { name: 'Originality, Style and Essence', eyebrow: 'Batallas · Danza · Comunidad', href: '/originalidad-estilo-esencia', description: 'Una plataforma para la escena, la competencia y la memoria del movimiento.', color: '#c98a2c', image: '/oee-third-edition.png' },
+    { name: 'Esencia gastronómica', eyebrow: 'Funky Burgers · Pachakana', href: '/#esencia-gastronomica', description: 'Funky Burgers y Pachakana reunidos en una sola experiencia gastronómica.', color: '#ef5b2a', image: '/funky-pachakana-collab.png' },
+    { name: 'Originality, Style and Essence', eyebrow: 'Batallas · Competencias · Premios', href: '/originalidad-estilo-esencia', description: 'Batallas, competencias, eventos, premios y memoria de una comunidad en movimiento.', color: '#c98a2c', image: '/oee-third-edition.png' },
+    { name: 'Charrofunka Company', eyebrow: 'Servicios · Ecosistema · Merch', href: '/#charrofunka-company', description: 'La compañía que conecta música, gastronomía, formación, eventos, baile, comunidad y merch.', color: '#f2d36d', image: '/oee-stage.png' },
   ],
+  brandEssence: {
+    music: {
+      name: 'El Charro Funk',
+      description: 'Proyecto musical y sello creativo: lanzamientos, sesiones, colaboraciones y experiencias donde la raíz mexicana conversa con nuevas frecuencias.',
+    },
+    gastronomy: {
+      name: 'Esencia gastronómica',
+      description: 'Dos cocinas con identidad propia y una misma vocación de encuentro.',
+      brands: [
+        { name: 'Funky Burgers', href: '/funky-burgers', detail: 'Hamburguesas, menú bilingüe y colaboraciones.' },
+        { name: 'Pachakana', href: '/pachakana', detail: 'Pizza, wings, menú bilingüe y experiencias alrededor del fuego.' },
+      ],
+    },
+    oee: {
+      name: 'Originality, Style and Essence',
+      description: 'Batallas Neoprimitivas, talleres, encuentros y archivo de una comunidad que convierte la danza en exploración artística.',
+      highlights: ['Próxima cita · 2027', 'Eventos y talleres', 'Premios OEE · categorías por confirmar'],
+    },
+    company: {
+      name: 'Charrofunka Company',
+      description: 'La casa que conecta y presenta, a grandes rasgos, todos los servicios y expresiones del ecosistema.',
+      services: ['Música y disquera', 'Proyectos gastronómicos', 'Eventos, clases y networking', 'Baile y experiencias', 'Merch · imágenes por integrar'],
+    },
+  },
   events: [
     { date: '2027', title: 'Batallas Neoprimitivas · 3ra edición', place: 'Guadalajara · Sede por anunciar', note: 'Coming soon' },
     { date: 'PRONTO', title: 'Talleres & talento invitado', place: 'Horarios y participantes por anunciar', note: 'En preparación' },

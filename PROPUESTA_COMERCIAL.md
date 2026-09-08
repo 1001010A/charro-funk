@@ -51,16 +51,13 @@ Crear un ecosistema digital coherente para El Charro Funk, Funky Burgers, Pachak
 
 El calendario comienza cuando se cuenta con anticipo, responsables de aprobación y el paquete mínimo de contenido. Los tiempos de espera por materiales o autorizaciones pueden mover la fecha de entrega.
 
-### Inversión recomendada
+### Inversión de referencia
 
-| Concepto | Rango sugerido (MXN) |
+| Concepto | Rango de referencia (MXN) |
 |---|---:|
-| Estrategia, arquitectura y dirección visual | $18,000–$26,000 |
-| Diseño y desarrollo del ecosistema MVP | $48,000–$68,000 |
-| Integración de contenido y control de calidad | $12,000–$18,000 |
-| **Total de referencia MVP** | **$78,000–$112,000 + IVA** |
+| Diseño y desarrollo de las landings descritas en esta fase | **$15,000–$16,000** |
 
-**Estructura de pago sugerida:** 40% al iniciar, 35% con aprobación de diseño y avance funcional, 25% contra entrega previa a publicación.
+Este rango cubre solamente las landings. Dominio, hosting, configuración DNS, despliegue productivo, boletaje y servicios de terceros se revisan y cotizan por separado. El monto final, impuestos, calendario y forma de pago deberán formalizarse en la cotización definitiva.
 
 ## Fase 2 — Operación y crecimiento opcional
 

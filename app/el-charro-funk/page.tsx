@@ -36,7 +36,7 @@ export default function CharroFunkPage() {
       </section>
       <section className="gallery-section">
         <div className="section-heading"><p className="eyebrow">Archivo en construcción</p><h2>Galería</h2></div>
-        <div className="gallery-grid"><div className="gallery-image gallery-image--wide"><Image src="/charro-hero.png" fill alt="Placeholder editorial de música" sizes="66vw" /></div><div className="gallery-placeholder gallery-placeholder--gold"><Music2 size={32} /><span>Retratos / prensa</span></div><div className="gallery-placeholder gallery-placeholder--red"><span>Sesiones<br />en vivo</span></div><div className="gallery-image"><Image src="/oee-stage.png" fill alt="Placeholder editorial de escenario" sizes="33vw" /></div></div>
+        <div className="gallery-grid"><div className="gallery-image gallery-image--wide"><Image src="/charro-funk-poster.png" fill alt="Cartel de El Charro Funk con trompeta y retrato de la agrupación" sizes="66vw" /></div><div className="gallery-placeholder gallery-placeholder--gold"><Music2 size={32} /><span>Retratos / prensa</span></div><div className="gallery-placeholder gallery-placeholder--red"><span>Sesiones<br />en vivo</span></div><div className="gallery-image"><Image src="/charro-funk-band.png" fill alt="Integrantes de El Charro Funk con vestuario negro y trompetas" sizes="33vw" /></div></div>
       </section>
       <SiteFooter />
     </main>

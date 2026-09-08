@@ -77,6 +77,38 @@ img { object-fit: cover; }
 .manifesto blockquote { margin: 0; max-width: 880px; font: 400 clamp(2.6rem, 5vw, 5.6rem)/1.02 var(--serif); letter-spacing: -.055em; }
 .manifesto small { grid-column: 2; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }
 
+.brand-essence { padding: clamp(90px, 12vw, 170px) clamp(22px, 6vw, 92px); background: #0d0b08; color: var(--cream); }
+.brand-essence__heading { display: grid; grid-template-columns: .45fr 1.1fr .8fr; align-items: end; gap: 28px; margin-bottom: clamp(58px, 8vw, 100px); }
+.brand-essence__heading h2 { margin: 0; font: 400 clamp(3rem, 6.8vw, 7rem)/.88 var(--serif); letter-spacing: -.06em; }
+.brand-essence__heading > p:last-child { max-width: 500px; margin: 0; color: var(--muted); }
+.essence-format { --essence-accent: var(--gold); display: grid; grid-template-columns: 72px minmax(0, .9fr) minmax(320px, 1.1fr); min-height: 560px; border-top: 1px solid var(--line); }
+.essence-format:last-child { border-bottom: 1px solid var(--line); }
+.essence-format--food { --essence-accent: #ef5b2a; }
+.essence-format--oee { --essence-accent: var(--jade); }
+.essence-format--company { --essence-accent: var(--maize); }
+.essence-format__number { padding-top: 42px; color: var(--essence-accent); font: 400 1.15rem var(--serif); }
+.essence-format__copy { align-self: center; padding: 64px clamp(28px, 5vw, 74px) 64px 0; }
+.essence-format__copy .eyebrow { color: var(--essence-accent); }
+.essence-format__copy h3 { max-width: 620px; margin: 0; font: 400 clamp(2.7rem, 5vw, 5.3rem)/.9 var(--serif); letter-spacing: -.055em; }
+.essence-format__copy > p:not(.eyebrow):not(.essence-pending) { max-width: 590px; margin: 27px 0; color: #c9bea6; font-size: 1.02rem; }
+.essence-format__copy .text-button { margin-top: 14px; }
+.essence-format__visual { position: relative; min-height: 560px; margin: 0; overflow: hidden; border-left: 1px solid var(--line); }
+.essence-format__visual::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(13,11,8,.24), transparent 55%), linear-gradient(0deg, rgba(13,11,8,.5), transparent 42%); }
+.essence-format__visual img { filter: saturate(.82) contrast(1.03); transition: transform .6s ease, filter .5s ease; }
+.essence-format:hover .essence-format__visual img { transform: scale(1.025); filter: saturate(1) contrast(1.03); }
+.essence-subbrands { display: grid; gap: 1px; margin-top: 34px; background: var(--line); border: 1px solid var(--line); }
+.essence-subbrands a { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 19px 20px; background: #15110d; }
+.essence-subbrands a > span { display: flex; flex-direction: column; }
+.essence-subbrands strong { font: 400 1.3rem var(--serif); }
+.essence-subbrands small { margin-top: 3px; color: var(--muted); font-size: .72rem; }
+.essence-highlights, .company-services { display: flex; flex-wrap: wrap; gap: 10px; margin: 32px 0 10px; padding: 0; list-style: none; }
+.essence-highlights li, .company-services li { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; padding: 9px 12px; border: 1px solid color-mix(in srgb, var(--essence-accent), transparent 48%); color: #e1d7c2; font-size: .76rem; font-weight: 700; letter-spacing: .04em; }
+.essence-pending { max-width: 570px; margin: 26px 0 0; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .78rem; }
+.merch-placeholder { min-height: 560px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 38px; border-left: 1px solid var(--line); background: repeating-linear-gradient(135deg, rgba(242,211,109,.04) 0 2px, transparent 2px 28px), #15110d; color: var(--maize); text-align: center; }
+.merch-placeholder figcaption { display: flex; flex-direction: column; align-items: center; }
+.merch-placeholder strong { margin-top: 12px; font: 400 clamp(2.3rem, 4vw, 4.5rem)/1 var(--serif); }
+.merch-placeholder span { max-width: 290px; margin-top: 10px; color: var(--muted); font-size: .78rem; }
+
 .site-footer { display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; padding: 72px clamp(22px, 6vw, 92px) 82px; background: #090806; border-top: 1px solid var(--line); color: var(--cream); }
 .site-footer > div:first-child { display: flex; align-items: center; gap: 18px; }
 .site-footer p { margin: 0; color: var(--muted); }
@@ -221,6 +253,15 @@ img { object-fit: cover; }
 .archive-photo-grid figure img { transition: transform .55s ease, filter .55s ease; }
 .archive-photo-grid figure:hover img { transform: scale(1.025); filter: saturate(1.08); }
 .archive-photo-grid figcaption { position: absolute; left: 14px; bottom: 14px; padding: 7px 9px; background: rgba(9,8,6,.8); color: var(--maize); font-size: .65rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.oee-awards { display: grid; grid-template-columns: 1.2fr .8fr; min-height: 720px; background: #080706; color: var(--cream); }
+.oee-awards__photo { position: relative; min-height: 720px; margin: 0; overflow: hidden; }
+.oee-awards__photo img { object-position: center; }
+.oee-awards__photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 55%, rgba(8,7,6,.6)); }
+.oee-awards__photo figcaption { position: absolute; z-index: 1; left: 18px; bottom: 18px; padding: 8px 11px; background: rgba(9,8,6,.84); color: var(--maize); font-size: .68rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.oee-awards__copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(58px, 8vw, 120px); border-left: 1px solid var(--line); }
+.oee-awards__logo { width: clamp(130px, 15vw, 220px); height: auto; margin-bottom: 44px; border: 1px solid var(--line); }
+.oee-awards__copy h2 { margin: 0; font: 700 clamp(2.8rem, 5vw, 5.6rem)/.88 var(--sans); letter-spacing: -.06em; text-transform: uppercase; }
+.oee-awards__copy > p:not(.eyebrow) { max-width: 560px; margin: 28px 0; color: var(--muted); }
 .oee-about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(45px, 8vw, 120px); padding: clamp(90px, 11vw, 150px) clamp(22px, 8vw, 125px); background: var(--jade); }
 .oee-about > div:last-child { align-self: end; max-width: 600px; }
 .oee-about > div:last-child p { margin: 0 0 28px; font-size: 1.08rem; }
@@ -268,7 +309,7 @@ img { object-fit: cover; }
   .site-header nav { gap: 14px; }
   .site-header nav a { font-size: .66rem; }
   .brand-lockup > span:last-child { display: none; }
-  .ecosystem > .section-heading, .story-section, .event-strip, .contact-section, .brand-proof .section-heading, .oee-archive .section-heading, .oee-about, .registration-section, .oee-foundation, .transformation-section .section-heading, .package-section .section-heading { grid-template-columns: 1fr; }
+  .ecosystem > .section-heading, .brand-essence__heading, .story-section, .event-strip, .contact-section, .brand-proof .section-heading, .oee-archive .section-heading, .oee-about, .registration-section, .oee-foundation, .transformation-section .section-heading, .package-section .section-heading { grid-template-columns: 1fr; }
   .brand-grid { grid-template-columns: 1fr; }
   .brand-card { min-height: 430px; }
   .brand-card__content > span { max-height: 70px; margin-top: 16px; opacity: .75; }
@@ -276,12 +317,18 @@ img { object-fit: cover; }
   .catalog-titles ul { grid-template-columns: repeat(2, 1fr); }
   .manifesto { grid-template-columns: 1fr; }
   .manifesto small { grid-column: 1; }
+  .essence-format { grid-template-columns: 56px 1fr; }
+  .essence-format__copy { padding-right: 0; }
+  .essence-format__visual, .merch-placeholder { grid-column: 1 / -1; min-height: 480px; border-top: 1px solid var(--line); border-left: 0; }
   .oee-hero { grid-template-columns: 1fr; }
   .oee-hero__copy { padding-top: 110px; }
   .oee-hero__image { min-height: 480px; }
   .featured-event { grid-template-columns: .75fr 1fr; gap: 45px; }
   .character-challenge { grid-template-columns: 1fr; }
   .character-challenge__image { min-height: 560px; }
+  .oee-awards { grid-template-columns: 1fr; }
+  .oee-awards__photo { min-height: 620px; }
+  .oee-awards__copy { border-top: 1px solid var(--line); border-left: 0; }
   .package-grid { grid-template-columns: 1fr; }
   .package-card--featured { transform: none; }
   .archive-grid { grid-template-columns: 1fr 1fr; }
@@ -304,6 +351,12 @@ img { object-fit: cover; }
   .ecosystem > .section-heading { align-items: start; }
   .brand-card { min-height: 380px; }
   .manifesto { min-height: auto; }
+  .brand-essence__heading { align-items: start; }
+  .essence-format { grid-template-columns: 42px 1fr; }
+  .essence-format__number { padding-top: 34px; }
+  .essence-format__copy { padding: 38px 0 54px; }
+  .essence-format__visual, .merch-placeholder { min-height: 105vw; }
+  .essence-subbrands small { font-size: .7rem; }
   .menu-grid, .album-grid { grid-template-columns: 1fr; }
   .brand-proof__grid, .registration-form__grid { grid-template-columns: 1fr; }
   .brand-proof figure { min-height: 115vw; }
@@ -327,6 +380,7 @@ img { object-fit: cover; }
   .archive-grid__current { grid-column: 1; }
   .archive-photo-grid { grid-template-columns: 1fr; grid-auto-rows: 340px; }
   .archive-photo-grid__wide { grid-column: 1; grid-row: span 1; }
+  .oee-awards__photo { min-height: 105vw; }
   .transformation-grid { grid-template-columns: 1fr; }
   .transformation-grid div { grid-template-columns: 1fr auto 1fr; }
   .registration-form__wide { grid-column: 1; }
