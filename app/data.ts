@@ -93,7 +93,7 @@ export const siteData = {
       mediaUrl: 'https://open.spotify.com/track/0jur7epGrHdAZZ83VMuM6J',
       mediaPlatform: 'spotify',
       coverImage: '/palpita-cover.jpg',
-      images: ['/el-charro-funk-calavera.png', '/el-charro-funk-caballo.png'],
+      images: [],
       officialContent: true,
     },
     {

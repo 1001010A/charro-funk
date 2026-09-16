@@ -55,17 +55,19 @@ export default function DiscographyPage() {
               </div>
             </section>
 
-            <section className="release-gallery" aria-labelledby={`${release.slug}-gallery-title`}>
-              <div className="section-heading"><p className="eyebrow">Archivo visual</p><h3 id={`${release.slug}-gallery-title`}>{release.images.length > 2 ? 'Movimiento en secuencia.' : 'Dos imágenes. Una frecuencia.'}</h3></div>
-              <div className={`release-gallery__grid ${release.images.length > 2 ? 'release-gallery__grid--many' : ''}`}>
-                {release.images.map((image, imageIndex) => (
-                  <figure key={`${release.slug}-${image}`}>
-                    <Image src={image} fill alt={`${release.title}: imagen ${imageIndex + 1} del archivo visual`} sizes="(max-width: 720px) 100vw, 50vw" />
-                    <figcaption>Archivo {String(imageIndex + 1).padStart(2, '0')}</figcaption>
-                  </figure>
-                ))}
-              </div>
-            </section>
+            {release.images.length > 0 && (
+              <section className="release-gallery" aria-labelledby={`${release.slug}-gallery-title`}>
+                <div className="section-heading"><p className="eyebrow">Archivo visual</p><h3 id={`${release.slug}-gallery-title`}>{release.images.length > 2 ? 'Movimiento en secuencia.' : 'Dos imágenes. Una frecuencia.'}</h3></div>
+                <div className={`release-gallery__grid ${release.images.length > 2 ? 'release-gallery__grid--many' : ''}`}>
+                  {release.images.map((image, imageIndex) => (
+                    <figure key={`${release.slug}-${image}`}>
+                      <Image src={image} fill alt={`${release.title}: imagen ${imageIndex + 1} del archivo visual`} sizes="(max-width: 720px) 100vw, 50vw" />
+                      <figcaption>Archivo {String(imageIndex + 1).padStart(2, '0')}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </section>
+            )}
           </article>
         );
       })}
