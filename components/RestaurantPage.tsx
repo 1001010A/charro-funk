@@ -1,10 +1,6 @@
-'use client';
-
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, ArrowUpRight, MessageCircle } from 'lucide-react';
-import type { MenuItem } from '@/app/data';
 import { siteData } from '@/app/data';
 import { EventStrip, SiteFooter, SiteHeader } from './SiteChrome';
 
@@ -20,8 +16,6 @@ type RestaurantProps = {
 };
 
 export function RestaurantPage({ brand, name, kicker, headline, description, image, imageAlt, gallery = [] }: RestaurantProps) {
-  const [language, setLanguage] = useState<'es' | 'en'>('es');
-  const menu = siteData.menus[brand];
   const orderText = encodeURIComponent(`Hola, quiero hacer un pedido en ${name}. [Mensaje demostrativo]`);
   const whatsappUrl = `https://wa.me/${siteData.whatsapp}?text=${orderText}`;
 
@@ -40,13 +34,13 @@ export function RestaurantPage({ brand, name, kicker, headline, description, ima
       </section>
       <section className="menu-section" aria-labelledby="menu-title">
         <div className="section-heading menu-heading">
-          <div><p className="eyebrow">Selección de la casa</p><h2 id="menu-title">{language === 'es' ? 'Menú' : 'Menu'}</h2></div>
-          <div className="language-toggle" aria-label="Idioma del menú"><button className={language === 'es' ? 'active' : ''} onClick={() => setLanguage('es')} aria-pressed={language === 'es'}>ES</button><button className={language === 'en' ? 'active' : ''} onClick={() => setLanguage('en')} aria-pressed={language === 'en'}>EN</button></div>
+          <div><p className="eyebrow">Pachakana × Funkyburgs</p><h2 id="menu-title">Menú</h2></div>
         </div>
-        <div className="menu-grid">
-          {menu.map((item: MenuItem, index) => <article className="menu-item" key={item.name}><span className="menu-index">0{index + 1}</span><div><h3>{language === 'es' ? item.name : item.nameEn}</h3><p>{language === 'es' ? item.description : item.descriptionEn}</p></div><strong>{item.price}</strong></article>)}
+        <div className="menu-poster-grid">
+          <figure><Image src="/menu-pachakana-funkyburgs-1.png" alt="Primera página del menú de Pachakana y Funkyburgs" width={1152} height={1536} sizes="(max-width: 760px) 100vw, 46vw" /></figure>
+          <figure><Image src="/menu-pachakana-funkyburgs-2.png" alt="Segunda página del menú de Pachakana y Funkyburgs" width={1152} height={1536} sizes="(max-width: 760px) 100vw, 46vw" /></figure>
+          <figure className="menu-poster-grid__promo"><Image src="/menu-pachakana-funkyburgs-promo.png" alt="Anuncio del menú completo de Pachakana y Funkyburgs" width={1152} height={1536} sizes="(max-width: 760px) 100vw, 58vw" /></figure>
         </div>
-        <p className="menu-note">Menú y precios de muestra. Recetas, alérgenos, disponibilidad y montos están pendientes de validación.</p>
       </section>
       {gallery.length > 0 && (
         <section className="brand-proof" aria-labelledby={`${brand}-archivo`}>
