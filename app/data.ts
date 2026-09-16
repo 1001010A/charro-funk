@@ -114,7 +114,7 @@ export const siteData = {
       ],
       mediaUrl: 'https://open.spotify.com/track/1H83GSy1eC8kGztTpgwe71',
       mediaPlatform: 'spotify',
-      coverImage: '',
+      coverImage: '/el-santo-charro-cover.png',
       images: ['/el-charro-funk-calavera.png', '/el-charro-funk-caballo.png'],
       officialContent: true,
     },
