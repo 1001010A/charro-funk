@@ -23,12 +23,12 @@ export default function CharroFunkPage() {
         <div><p>El Charro Funk se presenta, en esta demo, como una plataforma donde tradición y exploración comparten la misma pista. Su universo conecta lanzamientos, sesiones en vivo, colaboraciones y experiencias presenciales.</p><p className="content-disclaimer">Este relato es conceptual. La historia, integrantes, hitos y filosofía final deberán construirse con el equipo de la marca.</p></div>
       </section>
       <section className="discography" id="discografia" aria-labelledby="discography-title">
-        <div className="section-heading"><p className="eyebrow">Selección musical</p><h2 id="discography-title">Discografía</h2><p>Títulos visibles en el perfil oficial de Apple Music. Las portadas siguen siendo piezas conceptuales y deberán reemplazarse con el arte autorizado.</p><div className="official-music-links"><a href={siteData.music.appleArtistUrl} target="_blank" rel="noreferrer">Perfil oficial en Apple Music <ArrowUpRight size={15} /></a><a href={siteData.music.youtubeOfficialVideoUrl} target="_blank" rel="noreferrer">Video del canal oficial en YouTube <ArrowUpRight size={15} /></a></div></div>
+        <div className="section-heading"><p className="eyebrow">Selección musical</p><h2 id="discography-title">Discografía</h2><p>Entra al portal de discografía para conocer la historia, ver el archivo visual y abrir el enlace oficial de cada canción.</p><div className="official-music-links"><a href={siteData.music.youtubeOfficialVideoUrl} target="_blank" rel="noreferrer">Video del canal oficial en YouTube <ArrowUpRight size={15} /></a></div></div>
         <div className="album-grid">
           {siteData.releases.map((release, index) => (
             <article className="album-card" key={release.title}>
-              <div className={`album-cover ${release.palette}`}><span className="album-label">ECF · 00{index + 1}</span><strong>{release.title}</strong><div className="vinyl" aria-hidden="true"><span /></div></div>
-              <div className="album-info"><div><h3>{release.title}</h3><p>{release.type}</p></div><div className="release-links"><a href={siteData.music.appleArtistUrl} target="_blank" rel="noreferrer">Apple Music <ArrowUpRight size={14} /></a></div></div>
+              <Link className={`album-cover ${release.palette} ${release.coverImage ? 'album-cover--official' : ''}`} href={`/el-charro-funk/discografia#${release.slug}`} aria-label={`Ver ${release.title} en el portal de discografía`}>{release.coverImage ? <Image src={release.coverImage} alt={`Portada de ${release.title}`} fill sizes="(max-width: 640px) 100vw, 25vw" /> : <><span className="album-label">ECF · 00{index + 1}</span><strong>{release.title}</strong><div className="vinyl" aria-hidden="true"><span /></div></>}</Link>
+              <div className="album-info"><div><h3>{release.title}</h3><p>{release.status}</p></div><div className="release-links"><Link href={`/el-charro-funk/discografia#${release.slug}`}>Ver canción <ArrowUpRight size={14} /></Link></div></div>
             </article>
           ))}
         </div>

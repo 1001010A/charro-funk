@@ -34,7 +34,7 @@ export default function Home() {
           {siteData.brands.map((brand, index) => {
             const Icon = icons[index];
             return (
-              <Link className="brand-card" href={brand.href} key={brand.name} style={{ '--brand-color': brand.color } as React.CSSProperties}>
+              <Link className={`brand-card ${index === 3 ? 'brand-card--logo' : ''}`} href={brand.href} key={brand.name} style={{ '--brand-color': brand.color } as React.CSSProperties}>
                 <Image src={brand.image} alt="" fill sizes="(max-width: 900px) 100vw, 33vw" /><span className="brand-card__wash" />
                 <span className="brand-card__number">0{index + 1}</span><span className="brand-card__icon"><Icon size={22} /></span>
                 <span className="brand-card__content"><small>{brand.eyebrow}</small><strong>{brand.name}</strong><span>{brand.description}</span></span>
